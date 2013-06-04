@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<container>
+
+  <template name="web" src="META-INF/templates/web.xml" installPath="nuxeo.war/WEB-INF/web.xml"
+    required="true" />
+
+</container>
