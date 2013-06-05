@@ -1,0 +1,2 @@
+cors.allowOrigin=http://localhost http://localhost:9000 http://127.0.0.1:3030
+cors.urlPattern=/site/automation/*

@@ -12,10 +12,14 @@
   <filter>
     <filter-name>CORS</filter-name>
     <filter-class>com.thetransactioncompany.cors.CORSFilter</filter-class>
+    <init-param>
+      <param-name>cors.allowOrigin</param-name>
+      <param-value>${cors.allowOrigin}</param-value>
+    </init-param>
   </filter>
   <filter-mapping>
       <filter-name>CORS</filter-name>
-      <url-pattern>/site/automation/*</url-pattern>
+      <url-pattern>${cors.urlPattern}</url-pattern>
   </filter-mapping>
 
   %{EXCEPTION-FILTER}%
